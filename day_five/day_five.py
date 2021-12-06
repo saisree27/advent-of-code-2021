@@ -15,7 +15,7 @@ with open(FILE, "r") as f:
             for i in range(min(y1, y2), max(y1, y2) + 1):
                 points.append((x1, i))
         elif y1 == y2:
-            for i in range(min(x1, x2), max(x1, x2)  + 1):
+            for i in range(min(x1, x2), max(x1, x2) + 1):
                 points.append((i, y1))
         else:
             # part 2 (diagonal lines)
