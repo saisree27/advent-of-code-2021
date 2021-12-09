@@ -41,5 +41,5 @@ for x in range(len(matrix)):
             basin_sizes.append(calculate_basin(x, y, matrix, set()))
 
 print(sum_risks)
-basin_sizes = sorted(basin_sizes)
+basin_sizes = sorted(basin_sizes)[::-1]
 print(basin_sizes[0] * basin_sizes[1] * basin_sizes[2])
