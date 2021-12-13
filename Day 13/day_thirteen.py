@@ -8,11 +8,8 @@ def horizontal_reflection(num, matrix):
 
     for y in range(start, end):
         for x in range(len(matrix[0])):
-            try:
-                if matrix[2 * num - y][x] == '#':
-                    matrix[y][x] = matrix[2 * num - y][x]
-            except Exception:
-                pass
+            if matrix[2 * num - y][x] == '#':
+                matrix[y][x] = matrix[2 * num - y][x]
     
     matrix = matrix[:end]
     return matrix
